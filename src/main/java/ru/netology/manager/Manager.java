@@ -17,7 +17,7 @@ public class Manager {
 
         Film[] tmp = new Film[movies.length + 1];
 
-        System.arraycopy ( movies, 0, tmp, 0, movies.length );
+        System.arraycopy(movies, 0, tmp, 0, movies.length);
 
         tmp[tmp.length - 1] = movieItem;
 
@@ -27,10 +27,10 @@ public class Manager {
     public Film[] getMovies() {
         int arrayLength;//
 
-        if ( moviesToReturn <= 0 ) moviesToReturn=moviesToReturnDefault;
+        if (moviesToReturn <= 0) moviesToReturn = moviesToReturnDefault;
         arrayLength = moviesToReturn;
 
-        if ( moviesToReturn > movies.length ) {
+        if (moviesToReturn > movies.length) {
             arrayLength = movies.length;
         }
 
